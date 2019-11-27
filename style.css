@@ -197,13 +197,6 @@ body {
   .list {
     font-size: 17px;
   }
-  .header {
-    margin-top: 40px;
-  }
-  .text {
-    padding-top: 40px;
-    top: 100vh;
-  }
 }
 
 @media screen and (width: 375px) and (height: 812px) {
