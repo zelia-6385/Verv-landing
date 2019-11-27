@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banner</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="banner">
+        <p class="header">Unlock everything</p>
+        <div class="discount-block">
+          <div class="label">
+            <p class="save">save 67%</p>
+            <p class="cost">$49.99/year</p>
+          </div>
+          <div class="wrapper-button">
+            <button class="button">7-day free trial</button>
+          </div>
+        </div>
+        <div class="discount-block">
+          <div class="label">
+            <p class="cost">$12.99/month</p>
+          </div>
+          <div class="wrapper-button">
+            <button class="button">join</button>
+          </div>
+        </div>
+        <div class="wrapper-list">
+          <ul class="list">
+            <li class="elem"><div class="icon">&#10004;</div>Access to all workout plans</li>
+            <li class="elem"><div class="icon">&#10004;</div>Access to personal coaches</li>
+            <li class="elem"><div class="icon">&#10004;</div>Access to yummy meal plans</li>
+            <li class="elem"><div class="icon">&#10004;</div>Access to 1000+ mixes</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="text">
+        <span>Recurring billing. Cancel anytime.</span></br>
+
+        <span class="link-span"> <a href="#" class="link">Terms & Conditions</a><span class="space"></span> <a href="#" class="link">Privicy Policy</a> </span></br>
+
+        <span>
+          The subscription will automatically renew unless auto-renew is turned
+          off at least 24 hours before the end of the current period. You can go
+          to your iTunes Account settings to manage your subscription and turn
+          off auto-renew. Your iTunes Account will be charged when the purchase
+          is confirmed. If you subscribe before your free trial ends, the rest
+          of your free trial will be forfeited as soon as your purchase is
+          confirmed.
+        </span>
+      </div>
+      <div class="gradient"></div>
+      <div class="canselation">&#128473;</div>
+    </div>
+  </body>
+  <script>
+    function removeGradient() {
+      let gradient = document.querySelector(".gradient");
+      gradient.style.display="none";
+    }
+
+    function putGradient() {
+      let gradient = document.querySelector(".gradient");
+      gradient.style.display="block";
+    }
+
+    window.addEventListener("scroll", removeGradient, true);
+
+    window.addEventListener("resize", putGradient);
+  </script>
+</html>
